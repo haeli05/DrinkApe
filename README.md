@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ape Water - Next.js Website
 
-## Getting Started
+Self-hosted Next.js website for Ape Water, migrated from Shopify with exact design fidelity.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ✅ **Exact Shopify design** - All colors, fonts, and layouts migrated
+- ✅ **Bebas Neue + Poppins fonts** - Exact match (headings + body)
+- ✅ **Brand colors** - Gold (#FFC800), Dark Green (#0C221A), Blue, Green
+- ✅ **Responsive design** - Mobile-first approach
+- ✅ **shadcn/ui components** - Modern, accessible UI
+- ✅ **Real product images** - All assets migrated
+- ✅ **Interactive elements** - Hero carousel, rotating messages
+- ✅ **Value propositions** - 6 feature cards with icons
+- ✅ **Featured bundles** - Product cards with pricing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Tech Stack
 
-## Learn More
+- **Next.js 15+** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **shadcn/ui**
+- **Lucide Icons**
+- **Poppins Font** (via next/font)
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+/app
+  layout.tsx          # Root layout with Poppins
+  page.tsx            # Homepage assembly
+  globals.css         # Global styles + brand colors
+/components
+  /layout
+    header.tsx        # Site navigation
+    footer.tsx        # Site footer
+  /sections
+    hero.tsx          # Hero carousel
+    value-proposition.tsx  # Feature cards
+    featured-products.tsx  # Product bundles
+    marketing-tagline.tsx  # Rotating banner
+  /ui
+    (shadcn components)
+/public/images        # Product images (22 files)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Available Commands
 
-## Deploy on Vercel
+```bash
+# Development
+npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Production build
+npm run build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Start production server
+npm start
+
+# Lint code
+npm run lint
+```
+
+## 📸 Design Details Preserved
+
+- **Typography**: Bebas Neue for headings, Poppins (weight 500) for body, line-height 1.4
+- **Colors**: HSL values matching exact brand guidelines
+- **Animations**: 20s slow spin, 3s rotating messages
+- **Layout**: Container max-width, padding, responsive breakpoints
+- **Buttons**: Rounded-full, uppercase text, hover states
+- **Cards**: Shadow effects, hover transitions, featured badges
+
+## ✅ Completed Pages
+
+- ✅ Homepage with hero carousel, value props, featured bundles
+- ✅ Product pages (9 products including bundles and merch)
+- ✅ Collection pages (Water, Merch)
+- ✅ About Us / Story of Ape page
+- ✅ B2B Wholesale page with contact form
+- ✅ Cart page with quantity controls
+- ✅ Account pages (Login, Register)
+- ✅ All product images and assets migrated
+
+## 📝 Next Steps
+
+- [ ] Download value proposition icon PNG files (6 icons)
+- [ ] Add shopping cart functionality (currently UI only)
+- [ ] Integrate payment processing (Stripe/PayPal)
+- [ ] Add CMS for product management
+- [ ] Optimize images with next/image component
+- [ ] Add comprehensive SEO metadata
+- [ ] Set up analytics (GA4, Meta Pixel)
+- [ ] Add user authentication backend
+- [ ] Add search functionality
+
+## 🌐 Deployment
+
+This Next.js app can be deployed to:
+- **Vercel** (recommended - zero config)
+- **Netlify**
+- **AWS Amplify**
+- **Self-hosted** (Docker, VPS)
+
+```bash
+npm run build
+npm start
+```
+
+## 📄 License
+
+© 2025 Ape Water. All rights reserved.
