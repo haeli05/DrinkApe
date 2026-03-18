@@ -2,26 +2,31 @@
 
 import Link from "next/link";
 import { ShoppingCart, User, Menu, X } from "lucide-react";
-import { AnnouncementBar } from "./announcement-bar";
 import { useState } from "react";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-50 w-full">
-      {/* Announcement Bar */}
-      <AnnouncementBar />
+    <header className="sticky top-0 z-50 w-full bg-white">
+      {/* Main Navigation - White Background */}
+      <div className="h-[60px] px-5 max-w-[1820px] mx-auto relative flex items-center">
+        {/* Logo - Left */}
+        <Link href="/" className="flex items-center mr-8">
+          <img
+            src="/images/Copy_of_AW.MAIN.LOGO.NS.png"
+            alt="Ape Water"
+            className="h-[50px] w-auto max-w-[100px] md:max-w-[200px] object-contain"
+          />
+        </Link>
 
-      {/* Main Navigation - Fully Transparent */}
-      <div className="h-[60px] px-5 max-w-[1820px] mx-auto relative flex items-center backdrop-blur-none">
-        {/* Left - All Navigation Links */}
-        <nav className="hidden md:flex items-center gap-8">
+        {/* Navigation Links - Left */}
+        <nav className="hidden md:flex items-center gap-8 flex-1">
           {/* Water Dropdown */}
           <div className="relative group">
             <Link
               href="/collections/new-collection"
-              className="text-white font-bold text-[16px] hover:opacity-70 transition-opacity"
+              className="text-[rgb(12,34,26)] font-medium text-[16px] hover:opacity-70 transition-opacity"
             >
               Water
             </Link>
@@ -58,7 +63,7 @@ export function Header() {
           <div className="relative group">
             <Link
               href="/collections/shop-merch"
-              className="text-white font-bold text-[16px] hover:opacity-70 transition-opacity"
+              className="text-[rgb(12,34,26)] font-medium text-[16px] hover:opacity-70 transition-opacity"
             >
               Merch
             </Link>
@@ -100,46 +105,36 @@ export function Header() {
 
           <Link
             href="/pages/about-us"
-            className="text-white font-bold text-[16px] hover:opacity-70 transition-opacity"
+            className="text-[rgb(12,34,26)] font-medium text-[16px] hover:opacity-70 transition-opacity"
           >
             Story of Ape
           </Link>
           <Link
             href="/pages/b2b-wholesale"
-            className="text-white font-bold text-[16px] hover:opacity-70 transition-opacity"
+            className="text-[rgb(12,34,26)] font-medium text-[16px] hover:opacity-70 transition-opacity"
           >
             Wholesale
           </Link>
         </nav>
 
-        {/* Center - Logo - WHITE and BIGGER */}
-        <Link href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center">
-          <img
-            src="/images/Copy_of_AW.MAIN.LOGO.NS.png"
-            alt="Ape Water"
-            className="h-[80px] w-auto max-w-[150px] object-contain brightness-0 invert"
-            style={{ filter: 'brightness(0) invert(1)' }}
-          />
-        </Link>
-
         {/* Right - Account + Cart */}
         <div className="flex items-center gap-4 ml-auto">
           <Link
             href="/account/login"
-            className="hidden md:inline-block text-white font-bold text-[16px] hover:opacity-70 transition-opacity"
+            className="hidden md:inline-block text-[rgb(12,34,26)] font-medium text-[16px] hover:opacity-70 transition-opacity"
           >
             Log in
           </Link>
           <Link
             href="/cart"
-            className="text-white hover:opacity-70 transition-opacity"
+            className="text-[rgb(12,34,26)] hover:opacity-70 transition-opacity"
             aria-label="Cart"
           >
             <ShoppingCart className="h-5 w-5" strokeWidth={1.5} />
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-white hover:opacity-70 transition-opacity"
+            className="md:hidden text-[rgb(12,34,26)] hover:opacity-70 transition-opacity"
             aria-label="Menu"
           >
             {mobileMenuOpen ? (

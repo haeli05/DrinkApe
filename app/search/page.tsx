@@ -46,28 +46,28 @@ const allProducts = [
   {
     id: "6",
     title: "REUSABLE APE BOTTLE 36 OZ",
-    price: "$25.00",
+    price: "$19.99",
     image: "/images/36oz.1.jpg",
     handle: "reusable-water-bottle-36-oz",
   },
   {
     id: "7",
     title: "Ape Drop Hoodie",
-    price: "$65.00",
+    price: "$59.99",
     image: "/images/Ape-Water-Sweatshirt-Front-Blue.jpg",
     handle: "ape-drop-hoodie-ivory",
   },
   {
     id: "8",
     title: "Touch Grass Tote",
-    price: "$20.00",
+    price: "$29.99",
     image: "/images/touch.grass.tote.bag1.jpg",
     handle: "touch-grass-tote",
   },
   {
     id: "9",
     title: "Don't Be Thirsty Trucker",
-    price: "$30.00",
+    price: "$33.99",
     image: "/images/Don_tBeThirstyHat.jpg",
     handle: "dont-be-thirsty-trucker-hat",
   },
@@ -98,14 +98,14 @@ export default function SearchPage() {
         <div className="bg-[rgb(240,249,244)] py-16">
           <div className="max-w-[1820px] mx-auto px-5">
             <h1 className="text-4xl md:text-5xl font-bold uppercase text-center text-[rgb(12,34,26)] mb-8">
-              Search Our Site
+              Search our site
             </h1>
 
             {/* Search Input */}
             <div className="max-w-2xl mx-auto relative">
               <input
                 type="text"
-                placeholder="Search for products..."
+                placeholder="Search"
                 value={searchQuery}
                 onChange={(e) => handleSearch(e.target.value)}
                 className="w-full px-6 py-4 pr-14 border-2 border-[rgb(12,34,26)]/20 rounded-[9999px] focus:outline-none focus:border-[rgb(255,200,0)] transition-colors font-medium text-lg"

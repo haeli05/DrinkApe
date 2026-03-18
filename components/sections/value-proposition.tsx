@@ -4,55 +4,46 @@ const features = [
   {
     icon: Droplet,
     title: "100% Natural Spring Water",
-    description: "Pure spring water from pristine natural sources",
   },
   {
     icon: MapPin,
     title: "Locally Sourced in America",
-    description: "Supporting local communities and sustainability",
   },
   {
     icon: Sparkles,
     title: "Natural Electrolytes & Minerals",
-    description: "Essential minerals for optimal hydration",
   },
   {
     icon: Recycle,
     title: "Infinitely Recyclable Cans",
-    description: "Sustainable aluminum packaging, no plastic ever",
   },
   {
     icon: Waves,
     title: "Tap Water Free Forever",
-    description: "Never from municipal water sources",
   },
   {
     icon: Shield,
     title: "Fluoride & Sulfate Free Forever",
-    description: "Nothing but pure spring water",
   },
 ];
 
 export function ValueProposition() {
   return (
-    <section className="py-20 bg-background">
+    <section className="bg-white" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
       <div className="max-w-[1820px] mx-auto px-5">
-        <h2 className="text-2xl md:text-6xl font-bold text-center uppercase mb-16 tracking-tight text-[rgb(12,34,26)]">
+        <h2 className="font-bold text-center uppercase leading-none text-[rgb(12,34,26)]" style={{ fontSize: '48px', marginBottom: '64px' }}>
           Don't be thirsty. Ape DRINK water
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-5 md:gap-10">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center p-6 rounded-lg hover:bg-muted/50 transition-colors"
+              className="flex flex-col items-center text-center"
             >
               <div className="mb-4">
-                <feature.icon className="w-[80px] h-[80px] lg:w-[120px] lg:h-[120px] text-[rgb(255,200,0)]" />
+                <feature.icon className="w-[80px] h-[80px] md:w-[120px] md:h-[120px] text-[rgb(12,34,26)]" strokeWidth={1.1} />
               </div>
-              <h3 className="text-xl font-bold mb-2 uppercase">{feature.title}</h3>
-              <p className="text-muted-foreground font-medium">
-                {feature.description}
-              </p>
+              <h3 className="font-semibold uppercase text-[rgb(12,34,26)]" style={{ fontSize: '18px', fontWeight: 600, lineHeight: 1.4 }}>{feature.title}</h3>
             </div>
           ))}
         </div>

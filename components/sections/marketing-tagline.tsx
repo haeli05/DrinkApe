@@ -11,12 +11,12 @@ export function MarketingTagline() {
   const repeatedTaglines = [...taglines, ...taglines].join(" | ");
 
   return (
-    <div className="bg-white text-[rgb(12,34,26)] py-4 overflow-hidden border-y border-[rgb(12,34,26)]/10 relative">
+    <div className="bg-white text-[rgb(12,34,26)] overflow-hidden relative" style={{ height: '60px', display: 'flex', alignItems: 'center' }}>
       <div className="animate-scroll-horizontal whitespace-nowrap inline-block">
-        <span className="text-base md:text-lg font-bold uppercase tracking-wider px-4">
+        <span className="uppercase tracking-wider px-4" style={{ fontSize: '16px', fontWeight: 500 }}>
           {repeatedTaglines}
         </span>
-        <span className="text-base md:text-lg font-bold uppercase tracking-wider px-4">
+        <span className="uppercase tracking-wider px-4" style={{ fontSize: '16px', fontWeight: 500 }}>
           {repeatedTaglines}
         </span>
       </div>

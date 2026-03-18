@@ -9,18 +9,17 @@ const slides = [
     subtitle: "",
     cta: "Shop The Water",
     ctaLink: "/products/shopwater",
+    bgDesktop: "//drinkape.com/cdn/shop/files/Ape-Water-pure-hydration-ape-colorado-dark_c088fd6e-6a2c-4a7f-8b52-ce213c67ea2c.jpg?v=1729608817&width=2000",
+    bgMobile: "//drinkape.com/cdn/shop/files/Ape-Water-pure-hydration-ape-colorado-mobile.jpg?v=1727820111&width=1200",
   },
   {
     title: "Join the Tribe",
     subtitle: "",
     cta: "SHOP THE DRIP",
     ctaLink: "/collections/shop-merch",
+    bgDesktop: "//drinkape.com/cdn/shop/files/Ape-Water-pure-hydration-ape-colorado-dark_c088fd6e-6a2c-4a7f-8b52-ce213c67ea2c.jpg?v=1729608817&width=2000",
+    bgMobile: "//drinkape.com/cdn/shop/files/Ape-Water-pure-hydration-ape-colorado-mobile.jpg?v=1727820111&width=1200",
   },
-];
-
-const videos = [
-  "https://cdn.shopify.com/videos/c/o/v/placeholder-hero-1.mp4", // Placeholder video 1
-  "https://cdn.shopify.com/videos/c/o/v/placeholder-hero-2.mp4", // Placeholder video 2
 ];
 
 export function Hero() {
@@ -35,19 +34,17 @@ export function Hero() {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[rgb(12,34,26)]" style={{ minHeight: '100vh' }}>
-      {/* Background Video with Overlay */}
+    <section className="relative w-full overflow-hidden bg-[rgb(12,34,26)] -mt-[95px]" style={{ minHeight: '100vh' }}>
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <video
-          key={currentSlide}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover opacity-80"
-        >
-          <source src={videos[currentSlide]} type="video/mp4" />
-        </video>
+        <picture>
+          <source media="(min-width: 768px)" srcSet={slides[currentSlide].bgDesktop} />
+          <img
+            src={slides[currentSlide].bgMobile}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
       </div>
 
@@ -55,15 +52,15 @@ export function Hero() {
       <div className="relative h-full min-h-[100vh] flex items-center justify-center pt-[95px]">
         <div className="w-full max-w-[1820px] mx-auto px-5 py-24 text-center">
           <div className="max-w-[800px] mx-auto">
-            {/* Main Heading - Center Aligned - 80px = 5em */}
-            <h1 className="text-white text-[80px] leading-none font-bold uppercase mb-8 text-center">
+            {/* Main Heading - Center Aligned - Responsive */}
+            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-[80px] leading-none font-bold uppercase mb-8 text-center" style={{ letterSpacing: 0 }}>
               {slides[currentSlide].title}
             </h1>
 
             {/* CTA Button - Centered */}
             <a
               href={slides[currentSlide].ctaLink}
-              className="inline-block bg-[rgb(255,200,0)] text-[rgb(12,34,26)] px-10 py-4 rounded-[9999px] font-bold text-base uppercase hover:bg-[rgb(255,200,0)]/90 transition-all shadow-[5px_5px_0px_rgba(12,34,26,0.3)]"
+              className="inline-block bg-[rgb(255,200,0)] text-[rgb(12,34,26)] px-8 md:px-10 py-3 md:py-4 rounded-[9999px] font-bold text-sm md:text-base uppercase hover:bg-[rgb(255,200,0)]/90 transition-all shadow-[5px_5px_0px_rgba(12,34,26,0.3)]"
             >
               {slides[currentSlide].cta}
             </a>
@@ -72,36 +69,36 @@ export function Hero() {
       </div>
 
       {/* Carousel Navigation */}
-      <div className="absolute bottom-12 right-12 flex gap-3 z-10">
+      <div className="absolute bottom-6 md:bottom-12 right-6 md:right-12 flex gap-2 md:gap-3 z-10">
         <button
           onClick={prevSlide}
-          className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 flex items-center justify-center hover:bg-white/30 transition-all text-white"
+          className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 flex items-center justify-center hover:bg-white/30 transition-all text-white"
           aria-label="Previous slide"
         >
-          <ChevronLeft className="h-6 w-6" strokeWidth={2} />
+          <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" strokeWidth={2} />
         </button>
         <button
           onClick={nextSlide}
-          className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 flex items-center justify-center hover:bg-white/30 transition-all text-white"
+          className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 flex items-center justify-center hover:bg-white/30 transition-all text-white"
           aria-label="Next slide"
         >
-          <ChevronRight className="h-6 w-6" strokeWidth={2} />
+          <ChevronRight className="h-5 w-5 md:h-6 md:w-6" strokeWidth={2} />
         </button>
       </div>
 
-      {/* Rotating Sticker Badge - BIGGER and LOWER */}
+      {/* Rotating Sticker Badge - Exact Position */}
       <div
         className="absolute hidden md:block"
         style={{
-          bottom: '10%',
-          right: '10%',
+          top: '79%',
+          left: '80%',
           transform: 'none'
         }}
       >
         <div className="relative w-[150px] h-[150px] lg:w-[300px] lg:h-[300px]">
-          <div className="absolute inset-0 bg-[rgb(255,200,0)] rounded-full flex items-center justify-center animate-spin-slow shadow-lg">
-            <span className="text-[rgb(12,34,26)] font-bold text-base lg:text-3xl text-center leading-tight uppercase">
-              100%<br />Natural
+          <div className="absolute inset-0 bg-[rgb(255,200,0)] rounded-full flex items-center justify-center shadow-lg" style={{ animation: 'rotate 3s linear infinite' }}>
+            <span className="text-[rgb(12,34,26)] font-bold text-sm lg:text-2xl text-center leading-tight uppercase px-4">
+              100%<br />Natural<br />Spring<br />Water
             </span>
           </div>
         </div>

@@ -19,7 +19,6 @@ const products = [
     name: "Ape Big Package",
     description: "2 cases of Ape Water + Ape Cooler + Ape Thermos",
     price: "$69.99",
-    featured: true,
     image: "/images/Ape-Bundle-Image-Main_72ec0622-2ebf-4191-85e7-9d25ae4ea169.jpg",
   },
   {
@@ -32,23 +31,14 @@ const products = [
 
 export function FeaturedProducts() {
   return (
-    <section className="py-20 bg-white">
+    <section className="bg-white" style={{ paddingTop: '32px', paddingBottom: '32px' }}>
       <div className="max-w-[1820px] mx-auto px-5">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto" style={{ gap: '20px' }}>
           {products.map((product, index) => (
             <Card
               key={index}
-              className={`overflow-hidden transition-all hover:shadow-xl ${
-                product.featured
-                  ? "ring-2 ring-[rgb(255,200,0)] scale-105 md:scale-110"
-                  : ""
-              }`}
+              className="overflow-hidden transition-all hover:shadow-xl"
             >
-              {product.featured && (
-                <div className="bg-[rgb(255,200,0)] text-[rgb(12,34,26)] text-center py-2 font-bold text-sm uppercase">
-                  Most Popular
-                </div>
-              )}
               <CardHeader className="p-0">
                 <div className="aspect-square bg-white relative overflow-hidden">
                   <img
@@ -58,25 +48,19 @@ export function FeaturedProducts() {
                   />
                 </div>
               </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="text-2xl font-bold uppercase mb-2">
+              <CardContent style={{ padding: '16px' }}>
+                <CardTitle className="font-bold uppercase mb-2" style={{ fontSize: '21.3px' }}>
                   {product.name}
                 </CardTitle>
-                <CardDescription className="text-base font-medium mb-4">
+                <CardDescription className="font-medium mb-4" style={{ fontSize: '14px' }}>
                   {product.description}
                 </CardDescription>
-                <p className="text-3xl font-bold text-[rgb(12,34,26)]">
+                <p className="font-bold text-[rgb(12,34,26)] mb-3" style={{ fontSize: '16px' }}>
                   {product.price}
                 </p>
               </CardContent>
-              <CardFooter className="p-6 pt-0">
-                <Button
-                  className={`w-full font-semibold uppercase ${
-                    product.featured
-                      ? "bg-[rgb(255,200,0)] hover:bg-[rgb(255,200,0)]/90 text-[rgb(12,34,26)]"
-                      : ""
-                  }`}
-                >
+              <CardFooter style={{ padding: '0 16px 16px 16px' }}>
+                <Button className="w-full font-semibold uppercase">
                   Add to Cart
                 </Button>
               </CardFooter>

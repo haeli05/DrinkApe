@@ -7,7 +7,10 @@ const StarIcon = () => (
 );
 
 const messages = [
-  "WELCOME TO THE RE-EVOLUTION",
+  "PURIFIED WATER IS JUST FILTERED B.S",
+  "PLASTIC BOTTLES ARE A SCAM",
+  "TAP WATER: PURE CHEMICAL CHAOS",
+  "BREAKING: Bingo smashes banana-eating record!",
 ];
 
 export function AnnouncementBar() {

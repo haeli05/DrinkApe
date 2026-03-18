@@ -17,15 +17,20 @@ export default function WorldOfWaterPost() {
             </Link>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold uppercase text-[rgb(12,34,26)] mb-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold uppercase text-[rgb(12,34,26)] mb-4">
             World of Water
           </h1>
 
-          <time className="block text-center text-[rgb(12,34,26)]/70 font-medium mb-12">
-            July 03, 2023
-          </time>
+          <div className="mb-8">
+            <time className="block text-[rgb(12,34,26)]/70 font-medium">
+              July 03, 2023
+            </time>
+            <p className="text-[rgb(12,34,26)]/70 font-medium">
+              By Itai Leffler
+            </p>
+          </div>
 
-          <div className="mb-12">
+          <div className="mb-8">
             <img
               src="//drinkape.com/cdn/shop/articles/worldwater.jpg?v=1688441307&width=1200"
               alt="World of Water"
@@ -33,17 +38,9 @@ export default function WorldOfWaterPost() {
             />
           </div>
 
-          <div className="prose prose-lg max-w-none space-y-6">
+          <div className="prose prose-lg max-w-none">
             <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
-              Discover the story behind our commitment to sustainable hydration and why we believe in the power of natural spring water.
-            </p>
-
-            <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
-              At Ape Water, we're not just selling water - we're part of a movement to reconnect people with pure, natural hydration while protecting our planet from plastic pollution.
-            </p>
-
-            <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
-              Our aluminum cans are infinitely recyclable, and our water comes from pristine natural springs. It's water the way nature intended.
+              World Of Water: March 2023, Ape Beverages produced 'World Of Water'; a full immersive water wonderland pop up featuring aquatic themed digital art, immerse art instillations, music, lectures, parties and workshops.
             </p>
           </div>
         </article>

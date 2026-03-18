@@ -7,7 +7,7 @@ export default function AboutPage() {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative bg-[rgb(12,34,26)] text-white py-32 overflow-hidden">
+        <section className="relative bg-[rgb(12,34,26)] text-white py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0">
             <img
               src="/images/Ape-Water---Box-and-Can-1a-OPT.jpg"
@@ -16,10 +16,10 @@ export default function AboutPage() {
             />
           </div>
           <div className="relative max-w-[1820px] mx-auto px-5 text-center">
-            <h1 className="text-5xl md:text-7xl font-bold uppercase mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold uppercase mb-4 md:mb-6">
               Awaken Your Primal Power
             </h1>
-            <p className="text-xl md:text-2xl font-medium max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl font-medium max-w-3xl mx-auto">
               A sip of Ape Water changed everything. <strong>Now, it's your turn.</strong>
             </p>
           </div>
@@ -50,87 +50,76 @@ export default function AboutPage() {
         </section>
 
         {/* The Awakening Section */}
-        <section className="py-20 bg-white">
+        <section className="py-12 md:py-20 bg-white">
           <div className="max-w-[1200px] mx-auto px-5">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase text-center text-[rgb(12,34,26)] mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase text-center text-[rgb(12,34,26)] mb-8 md:mb-12">
               The Awakening of Bingo the Ape
             </h2>
 
-            <div className="prose prose-lg max-w-none space-y-6">
-              <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
-                Bingo was once just another human, living in a world driven by greed and waste. People drank "purified" tap water from plastic without a second thought, disconnected from nature.
+            <div className="prose prose-lg max-w-none space-y-4 md:space-y-6">
+              <p className="text-base md:text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
+                Bingo was once just another human, living in a world driven by greed and waste. People drank "purified" tap water from plastic without a second thought, disconnected from nature. In search of something real, Bingo journeyed far and wide, but everywhere he went, the behavior of humanity left him feeling empty and disillusioned.
               </p>
 
-              <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
-                In search of something real, Bingo journeyed far and wide, but everywhere he went, the behavior of humanity left him feeling empty and disillusioned.
-              </p>
-
-              <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
-                His path eventually led him deep into nature, where he discovered the pure springs of Mount Shasta. As he drank from the untouched waters, something profound happened—his mind awakened to the truth.
-              </p>
-
-              <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
-                He was part of something far greater than the hollow world of human consumption he left behind. In that moment of clarity, Bingo was transformed into his true, primal self—an Ape.
+              <p className="text-base md:text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
+                His path eventually led him deep into nature, where he discovered the pure springs of Mount Shasta. As he drank from the untouched waters, something profound happened—his mind awakened to the truth. He was part of something far greater than the hollow world of human consumption he left behind. In that moment of clarity, Bingo was transformed into his true, primal self—an Ape.
               </p>
             </div>
           </div>
         </section>
 
         {/* Mission Section */}
-        <section className="py-20 bg-[rgb(240,249,244)]">
+        <section className="py-12 md:py-20 bg-[rgb(240,249,244)]">
           <div className="max-w-[1200px] mx-auto px-5">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase text-center text-[rgb(12,34,26)] mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase text-center text-[rgb(12,34,26)] mb-8 md:mb-12">
               Spreading the Power of Clean Hydration
             </h2>
 
             <div className="max-w-4xl mx-auto mb-12">
               <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed text-center mb-8">
-                Bingo has made it his mission to bring pure, natural hydration to the world. He seeks out the best springs, reconnecting humanity to its roots, and fighting back against the corporate-driven, plastic-filled water industry.
-              </p>
-              <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed text-center mb-8">
-                Ape Water isn't just about questioning thirst; it's about reimagining water as a vessel for change.
+                Bingo has made it his mission to bring pure, natural hydration to the world. He seeks out the best springs, reconnecting humanity to its roots, and fighting back against the corporate-driven, plastic-filled water industry. Ape Water isn't just about questioning thirst; it's about reimagining water as a vessel for change.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center p-8 bg-white rounded-[1rem] shadow-[10px_10px_0px_rgba(12,34,26,0.1)]">
-                <div className="text-5xl mb-4">🌊</div>
-                <h3 className="text-2xl font-bold uppercase text-[rgb(12,34,26)] mb-4">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
+              <div className="text-center p-6 md:p-8 bg-white rounded-[1rem] shadow-[10px_10px_0px_rgba(12,34,26,0.1)]">
+                <div className="text-4xl md:text-5xl mb-3 md:mb-4">🌊</div>
+                <h3 className="text-xl md:text-2xl font-bold uppercase text-[rgb(12,34,26)] mb-3 md:mb-4">
                   Pure Spring Water
                 </h3>
-                <p className="text-[rgb(12,34,26)] font-medium">
+                <p className="text-sm md:text-base text-[rgb(12,34,26)] font-medium">
                   Sourced from pristine natural springs, filtered by nature itself through layers of ancient rock.
                 </p>
               </div>
 
-              <div className="text-center p-8 bg-white rounded-[1rem] shadow-[10px_10px_0px_rgba(12,34,26,0.1)]">
-                <div className="text-5xl mb-4">♻️</div>
-                <h3 className="text-2xl font-bold uppercase text-[rgb(12,34,26)] mb-4">
+              <div className="text-center p-6 md:p-8 bg-white rounded-[1rem] shadow-[10px_10px_0px_rgba(12,34,26,0.1)]">
+                <div className="text-4xl md:text-5xl mb-3 md:mb-4">♻️</div>
+                <h3 className="text-xl md:text-2xl font-bold uppercase text-[rgb(12,34,26)] mb-3 md:mb-4">
                   Zero Plastic
                 </h3>
-                <p className="text-[rgb(12,34,26)] font-medium">
+                <p className="text-sm md:text-base text-[rgb(12,34,26)] font-medium">
                   Infinitely recyclable aluminum cans. No single-use plastic. No compromise with the planet.
                 </p>
               </div>
 
-              <div className="text-center p-8 bg-white rounded-[1rem] shadow-[10px_10px_0px_rgba(12,34,26,0.1)]">
-                <div className="text-5xl mb-4">🦍</div>
-                <h3 className="text-2xl font-bold uppercase text-[rgb(12,34,26)] mb-4">
+              <div className="text-center p-6 md:p-8 bg-white rounded-[1rem] shadow-[10px_10px_0px_rgba(12,34,26,0.1)]">
+                <div className="text-4xl md:text-5xl mb-3 md:mb-4">🦍</div>
+                <h3 className="text-xl md:text-2xl font-bold uppercase text-[rgb(12,34,26)] mb-3 md:mb-4">
                   The Movement
                 </h3>
-                <p className="text-[rgb(12,34,26)] font-medium">
+                <p className="text-sm md:text-base text-[rgb(12,34,26)] font-medium">
                   Reconnecting humanity to its roots, fighting back against the corporate-driven, plastic-filled water industry.
                 </p>
               </div>
             </div>
 
             <div className="text-center max-w-4xl mx-auto">
-              <p className="text-xl text-[rgb(12,34,26)] font-bold mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-[rgb(12,34,26)] font-bold mb-6 md:mb-8">
                 <strong>Join the Ape Movement—to awaken, hydrate, and rebel against a system that has enslaved our thirst for something real. No more corporate trickery. We choose a better future together that supports the NOW generation and the planet</strong>
               </p>
               <a
                 href="/collections/new-collection"
-                className="inline-block bg-[rgb(255,200,0)] text-[rgb(12,34,26)] py-5 px-12 rounded-[9999px] font-bold text-lg uppercase hover:bg-[rgb(255,200,0)]/90 transition-all shadow-[5px_5px_0px_rgba(12,34,26,0.3)]"
+                className="inline-block bg-[rgb(255,200,0)] text-[rgb(12,34,26)] py-4 md:py-5 px-8 md:px-12 rounded-[9999px] font-bold text-base md:text-lg uppercase hover:bg-[rgb(255,200,0)]/90 transition-all shadow-[5px_5px_0px_rgba(12,34,26,0.3)]"
               >
                 JOIN THE TRIBE
               </a>

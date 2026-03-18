@@ -24,61 +24,61 @@ export default function WholesalePage() {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-[rgb(29,108,187)] text-white py-24">
+        <section className="bg-[rgb(29,108,187)] text-white py-16 md:py-24">
           <div className="max-w-[1200px] mx-auto px-5 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold uppercase mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-4 md:mb-6">
               B2B Wholesale
             </h1>
-            <p className="text-xl md:text-2xl font-medium max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl font-medium max-w-3xl mx-auto">
               Partner with Ape Water and bring premium natural spring water to your customers
             </p>
           </div>
         </section>
 
         {/* Benefits Section */}
-        <section className="py-20 bg-white">
+        <section className="py-12 md:py-20 bg-white">
           <div className="max-w-[1200px] mx-auto px-5">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase text-center text-[rgb(12,34,26)] mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase text-center text-[rgb(12,34,26)] mb-10 md:mb-16">
               Why Partner With Us
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-10 md:mb-16">
               <div className="text-center">
-                <div className="text-5xl mb-4">💎</div>
-                <h3 className="text-xl font-bold uppercase text-[rgb(12,34,26)] mb-2">
+                <div className="text-3xl md:text-5xl mb-3 md:mb-4">💎</div>
+                <h3 className="text-base md:text-xl font-bold uppercase text-[rgb(12,34,26)] mb-2">
                   Premium Quality
                 </h3>
-                <p className="text-[rgb(12,34,26)] font-medium">
+                <p className="text-sm md:text-base text-[rgb(12,34,26)] font-medium">
                   100% natural spring water from pristine sources
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="text-5xl mb-4">📦</div>
-                <h3 className="text-xl font-bold uppercase text-[rgb(12,34,26)] mb-2">
+                <div className="text-3xl md:text-5xl mb-3 md:mb-4">📦</div>
+                <h3 className="text-base md:text-xl font-bold uppercase text-[rgb(12,34,26)] mb-2">
                   Bulk Pricing
                 </h3>
-                <p className="text-[rgb(12,34,26)] font-medium">
+                <p className="text-sm md:text-base text-[rgb(12,34,26)] font-medium">
                   Competitive wholesale rates for volume orders
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="text-5xl mb-4">🚚</div>
-                <h3 className="text-xl font-bold uppercase text-[rgb(12,34,26)] mb-2">
+                <div className="text-3xl md:text-5xl mb-3 md:mb-4">🚚</div>
+                <h3 className="text-base md:text-xl font-bold uppercase text-[rgb(12,34,26)] mb-2">
                   Fast Delivery
                 </h3>
-                <p className="text-[rgb(12,34,26)] font-medium">
+                <p className="text-sm md:text-base text-[rgb(12,34,26)] font-medium">
                   Reliable shipping and logistics support
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="text-5xl mb-4">🤝</div>
-                <h3 className="text-xl font-bold uppercase text-[rgb(12,34,26)] mb-2">
+                <div className="text-3xl md:text-5xl mb-3 md:mb-4">🤝</div>
+                <h3 className="text-base md:text-xl font-bold uppercase text-[rgb(12,34,26)] mb-2">
                   Partnership
                 </h3>
-                <p className="text-[rgb(12,34,26)] font-medium">
+                <p className="text-sm md:text-base text-[rgb(12,34,26)] font-medium">
                   Dedicated support and marketing materials
                 </p>
               </div>
@@ -87,12 +87,12 @@ export default function WholesalePage() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="py-20 bg-[rgb(240,249,244)]">
+        <section className="py-12 md:py-20 bg-[rgb(240,249,244)]">
           <div className="max-w-[800px] mx-auto px-5">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase text-center text-[rgb(12,34,26)] mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase text-center text-[rgb(12,34,26)] mb-3 md:mb-4">
               Get Started
             </h2>
-            <p className="text-center text-lg text-[rgb(12,34,26)] font-medium mb-12">
+            <p className="text-center text-base md:text-lg text-[rgb(12,34,26)] font-medium mb-8 md:mb-12">
               Fill out the form below and our wholesale team will reach out within 24 hours
             </p>
 

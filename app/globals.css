@@ -48,10 +48,10 @@
 
 :root {
   /* Ape Water Brand Colors - Exact RGB Match */
-  --ape-gold: 45 100% 50%; /* Gold/Yellow rgb(255,200,0) */
-  --ape-dark-green: 157 48% 9%; /* Dark Green rgb(12,34,26) */
-  --ape-blue: 205 73% 42%; /* Blue rgb(29,108,187) */
-  --ape-green: 149 35% 46%; /* Green rgb(77,158,118) */
+  --ape-gold: 45 100% 50%; /* Gold/Yellow #FFC800 rgb(255,200,0) */
+  --ape-dark-green: 157 48% 9%; /* Dark Green #0C221A rgb(12,34,26) */
+  --ape-blue: 208 82% 42%; /* Blue #136DC3 rgb(19,109,195) */
+  --ape-light-green-bg: 141 50% 95%; /* Light Green BG #F0F9F4 rgb(240,249,244) */
 
   /* Shopify Theme Variables - Exact Match */
   --max-site-width: 1820px;
@@ -197,5 +197,14 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

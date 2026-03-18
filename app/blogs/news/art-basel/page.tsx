@@ -17,15 +17,20 @@ export default function ArtBaselPost() {
             </Link>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold uppercase text-[rgb(12,34,26)] mb-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold uppercase text-[rgb(12,34,26)] mb-4">
             Art Basel
           </h1>
 
-          <time className="block text-center text-[rgb(12,34,26)]/70 font-medium mb-12">
-            July 03, 2023
-          </time>
+          <div className="mb-8">
+            <time className="block text-[rgb(12,34,26)]/70 font-medium">
+              July 03, 2023
+            </time>
+            <p className="text-[rgb(12,34,26)]/70 font-medium">
+              By Itai Leffler
+            </p>
+          </div>
 
-          <div className="mb-12">
+          <div className="mb-8">
             <img
               src="//drinkape.com/cdn/shop/articles/apetruck.jpg?v=1688441691&width=1200"
               alt="Art Basel"
@@ -33,17 +38,9 @@ export default function ArtBaselPost() {
             />
           </div>
 
-          <div className="prose prose-lg max-w-none space-y-6">
+          <div className="prose prose-lg max-w-none">
             <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
               Art Basel, a pinnacle event in the art world, celebrates creativity, innovation, and the power of human expression. Ape Water, known for its commitment to sustainability and high-quality hydration, ape water elevated the overall experience for attendees and artists alike.
-            </p>
-
-            <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
-              Our presence at Art Basel brought together two worlds - contemporary art and sustainable hydration. We provided refreshment to thousands of art enthusiasts while showcasing our commitment to eliminating plastic waste.
-            </p>
-
-            <p className="text-lg text-[rgb(12,34,26)] font-medium leading-relaxed">
-              The event was a perfect platform to demonstrate that quality hydration and environmental responsibility can go hand in hand. Join us in making a difference, one can at a time.
             </p>
           </div>
         </article>

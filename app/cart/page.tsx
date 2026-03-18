@@ -41,19 +41,22 @@ export default function CartPage() {
       <main className="flex-1 bg-white py-16">
         <div className="max-w-[1200px] mx-auto px-5">
           <h1 className="text-4xl md:text-5xl font-bold uppercase text-[rgb(12,34,26)] mb-12">
-            Your Cart
+            Your cart
           </h1>
 
           {cartItems.length === 0 ? (
             <div className="text-center py-20">
-              <p className="text-xl text-[rgb(12,34,26)] font-medium mb-8">
-                Your cart is empty
+              <p className="text-xl text-[rgb(12,34,26)] font-medium mb-4">
+                Your cart is currently empty.
+              </p>
+              <p className="text-lg text-[rgb(12,34,26)] font-medium mb-8">
+                New subtotal: $0.00 USD
               </p>
               <a
                 href="/collections/new-collection"
                 className="inline-block bg-[rgb(255,200,0)] text-[rgb(12,34,26)] py-4 px-10 rounded-[9999px] font-bold text-base uppercase hover:bg-[rgb(255,200,0)]/90 transition-all shadow-[5px_5px_0px_rgba(12,34,26,0.3)]"
               >
-                Continue Shopping
+                SHOP THE DRIP
               </a>
             </div>
           ) : (
